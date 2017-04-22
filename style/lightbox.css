@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(../images/lightboxImgs/close.png.html) url(../images/lightboxImgs/loading.gif.html) url(../images/lightboxImgs/prev.png.html) url(../images/lightboxImgs/next.png.html);
+  content: url(../images/lightboxImgs/close.png) url(../images/lightboxImgs/loading.gif) url(../images/lightboxImgs/prev.png) url(../images/lightboxImgs/next.png);
   display: none;
 }
 
@@ -79,7 +79,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/lightboxImgs/loading.gif.html) no-repeat;
+  background: url(../images/lightboxImgs/loading.gif) no-repeat;
 }
 
 .lb-nav {
@@ -110,7 +110,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../images/lightboxImgs/prev.png.html) left 48% no-repeat;
+  background: url(../images/lightboxImgs/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -128,7 +128,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../images/lightboxImgs/next.png.html) right 48% no-repeat;
+  background: url(../images/lightboxImgs/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -192,7 +192,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/lightboxImgs/close.png.html) top right no-repeat;
+  background: url(../images/lightboxImgs/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);

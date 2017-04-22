@@ -210,14 +210,14 @@ input[type="email"]{
 	font-size:13px;
 	color:#1b3b62;
 	padding: 5px 25px;
-	background: url('../images/btn_ins_back.png.html') repeat;
+	background: url('../images/btn_ins_back.png') repeat;
 	border:none;
 	cursor:pointer;
 	z-index:1;
 	margin-left:10px!important;
 }
 #trigger:hover{
-	background: url('../images/btn_ins_hover_back.png.html') repeat;
+	background: url('../images/btn_ins_hover_back.png') repeat;
 	color:white;
 }
 #file{
@@ -252,7 +252,7 @@ form p{
 	font-family:"ubuntuL";
 	text-align: center;
 	text-decoration: none;
-	background: url('../images/btn_ins_back.png.html') repeat;
+	background: url('../images/btn_ins_back.png') repeat;
 	padding: 12px 17px;
 	display: block;
 	float: left;
@@ -262,7 +262,7 @@ form p{
 	cursor:pointer;
 }
 .submitButton:hover{
-	background: url('../images/btn_ins_hover_back.png.html') repeat;
+	background: url('../images/btn_ins_hover_back.png') repeat;
 	border-left: 7px solid #1b3b62;
 	color:white;
 }
@@ -285,14 +285,14 @@ form p{
 	margin-bottom:10px;
 	text-align:center;
 	line-height: 50px;
-	background: url('../images/btn_ins_back.png.html') repeat;
+	background: url('../images/btn_ins_back.png') repeat;
 	text-decoration:none;
 	font-family:"ubuntuL";
 	font-size:16px;
 	color:#3e4757;
 }
 .rightBtnsInside:hover{
-	background: url('../images/btn_ins_hover_back.png.html') repeat;
+	background: url('../images/btn_ins_hover_back.png') repeat;
 	border-left: 7px solid #1b3b62;
 	color:white;
 }
@@ -317,7 +317,7 @@ form p{
 	width:173px;
 	float:left;
 	text-align:left;
-	background: url('../images/someText_back.png.html') repeat;
+	background: url('../images/someText_back.png') repeat;
 }
 .someText a{
 	font-family:"ubuntuL";
@@ -354,7 +354,7 @@ form p{
 	/*width:100%;*/
 	min-width:1280px;
 	margin:0 auto;
-	background:url('../images/header_back.png.html') repeat-x;
+	background:url('../images/header_back.png') repeat-x;
 	z-index:3;
 	top:0px;
 }

@@ -170,6 +170,7 @@ $(document).ready(function () {
 <script>
 	var url;
 	var id;
+	var data;
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
@@ -181,7 +182,8 @@ $(document).ready(function () {
                     		//$("#"+id).html(data);		
                   		console.log('insert after'+id);
                  });
-		console.log(result);
+		//console.log(result);
+		console.log(data);
 	});
 });
 </script>		

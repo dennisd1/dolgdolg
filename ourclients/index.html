@@ -170,6 +170,7 @@ $(document).ready(function () {
 <script>
 	var url;
 	var id;
+	var html;
 	
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
@@ -178,13 +179,13 @@ $(document).ready(function () {
 		        console.log(url);
 			console.log(id);
 			result = $.get(url).done(function(data){  
-				window.html = data;
-				$(data).insertAfter("#"+id);
+				html = data;
+				//$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);		
-                  		console.log('insert after'+id);
-				//console.log(html);
+                  		//console.log('insert after'+id);
+				console.log(html);
                  });
-		console.log(window.html);
+		//console.log(html);
 		
 	});
 });

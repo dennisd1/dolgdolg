@@ -173,7 +173,7 @@ $(document).ready(function () {
 		url=$(this).attr("data-loader");
 		id=$(this).attr("id");
 			$.get(url, function(data){  
-				$(data).insertBefore("#"+id);
+				$(data).insertAfter(this);
                     		//$("#"+id).html(data);
 				
                     console.log(url);

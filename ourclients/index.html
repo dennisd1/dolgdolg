@@ -193,7 +193,9 @@ $(document).ready(function () {
 		//console.log(html);
 		
 	});
-	console.log('I am finished');
+});
+$( document ).ajaxComplete(function() {
+  console.log( "ajaxComplete." );
 });
 </script>		
 	</body>

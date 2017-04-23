@@ -236,7 +236,7 @@ width:25%;
 <div style="clear:both"></div>
 			</div>
 		</div>
-<div id="footertoload"></div>
+<div id="footertoload" data-loader="../components/footer.html"></div>
 		<script src="../images/jquery-1.11.1.min.js"></script>
 		<script>
 			$(document).ready(function () {
@@ -255,12 +255,14 @@ $(document).ready(function () {
 });
 </script>
 	<script type="text/javascript">
-			url = '../components/footer.html';
-    		                $.get(url, function(data){           
+		$(document).ready(function () {
+		url=$('div[data-loader]').attr("data-loader");
+			$.get(url, function(data){           
                     		$('#footertoload').html(data);
 				
-                    console.log("footer added");
+                    console.log(url);
                  });
+	});
 		</script>		
 	</body>
 </html>

@@ -166,10 +166,12 @@ $(document).ready(function () {
 	$('.content').css('height','auto');
 });
 </script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-		url=$('div[data-loader]').attr("data-loader");
-		id=$('div[data-loader]').attr("id");
+	
+<script>
+$(document).ready(function () {
+	$('div[data-loader]').each(function( index ) {
+		url=$(this).attr("data-loader");
+		id=$(this).attr("id");
 			$.get(url, function(data){  
 				$(data).insertBefore("#"+id);
                     		//$("#"+id).html(data);
@@ -178,6 +180,7 @@ $(document).ready(function () {
 			console.log(id);
                  });
 	});
-		</script>		
+});
+</script>		
 	</body>
 </html>

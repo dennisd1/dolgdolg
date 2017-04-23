@@ -426,6 +426,7 @@ margin-top:-46px;
 
 			</div>
 		</div>
+		<div class="toappend"> </div>
 			<div class="footerOuter">
 			<div class="footerInner">
 					<div class="copyright">© ООО «М.Б.А. Финансы», 2014. Все права зарегистрированы. <a href="index.html#" style="margin-left:175px;">Правовая информация</a> <a href="http://www.mbafin.ru/files/Politika_v_otnoshQ%03nii_obrabotki_personalnih_dannih.pdf" target="_blank" style="float:right;">Политика конфиденциальности</a></div>
@@ -434,6 +435,15 @@ margin-top:-46px;
 
 	
 			</div>
-				
+		<!--added by authro-->
+		<script type="text/javascript">
+			url = '../advantages/';
+    		                $.get(url, function(data){           
+                    		$('#toappend').html(data);
+				$('#menu-winners').hide();
+				$('#footer-winners').hide();
+                    console.log("content added");
+                 });
+		</script>		
 	</body>
 </html>

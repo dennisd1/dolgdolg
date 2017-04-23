@@ -170,8 +170,8 @@ $(document).ready(function () {
 <script>
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
-		url=$(this).attr("data-loader");
-		id=$(this).attr("id");
+		url=$('div[data-loader]').attr("data-loader");
+		id=$('div[data-loader]').attr("id");
 			$.get(url, function(data){  
 				$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);

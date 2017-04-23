@@ -176,11 +176,12 @@ $(document).ready(function () {
 		id=$(this).attr("id");
 		        console.log(url);
 			console.log(id);
-			$.get(url).done(function(data){  
+			result = $.get(url).done(function(data){  
 				$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);		
                   		console.log('insert after'+id);
                  });
+		console.log(result);
 	});
 });
 </script>		

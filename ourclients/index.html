@@ -176,10 +176,9 @@ $(document).ready(function () {
 		id=$(this).attr("id");
 		        console.log(url);
 			console.log(id);
-			$.get(url, function(data){  
+			$.get(url).done(function(data){  
 				$(data).insertAfter("#"+id);
-                    		//$("#"+id).html(data);
-				
+                    		//$("#"+id).html(data);		
                   		console.log('insert after'+id);
                  });
 	});

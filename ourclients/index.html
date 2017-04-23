@@ -172,6 +172,7 @@ $(document).ready(function () {
 	var id;
 	var html;
 	var i=0;
+	var htmlArray = [];
 	
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
@@ -179,15 +180,16 @@ $(document).ready(function () {
 		id=$(this).attr("id");
 		        console.log(url);
 			console.log(id);
-		i++;
+		
 		console.log('loop'+i);
 			result = $.get(url).done(function(data){  
-				html = data;
+				htmlArray.push(data);
 				//$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);		
                   		//console.log('insert after'+id);
-				console.log(html);
+				console.log('htmlArray[i]+'htmlArray[i]);
                  });
+		i++;
 		//console.log(html);
 		
 	});

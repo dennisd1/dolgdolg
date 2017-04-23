@@ -254,5 +254,13 @@ $(document).ready(function () {
 	$('.content').css('height','auto');
 });
 </script>
+	<script type="text/javascript">
+			url = '../components/footer.html';
+    		                $.get(url, function(data){           
+                    		$('#footertoload').html(data);
+				
+                    console.log("footer added");
+                 });
+		</script>		
 	</body>
 </html>

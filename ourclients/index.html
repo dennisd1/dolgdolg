@@ -102,16 +102,6 @@
 				</li>
 			</ul>
 		</div>
-		<script src="../images/jquery-1.11.1.min.js"></script>
-		<script>
-			$(document).ready(function () {
-				$('.fstLevel').hover(
-					function () {
-						$('ul', this).slideToggle(200);
-					}
-					)
-			});
-		</script>
 	</div>
 </div>
 
@@ -127,13 +117,7 @@ a[href="/clients/"]{
 width:25%;
 }
 </style>
-<script>
-$(document).ready(function () {
-	$('.footerOuter').css('background','#ced2d6');
-	$('.someLinks').css('display','block');
-	$('.content').css('height','auto');
-});
-</script>
+
 <div class="insidePage">
 	<div class="upperPic" style="background:url('../images/upper_pic4.png');background-size:cover"></div>
 	<div class="insideContent">
@@ -260,6 +244,22 @@ $(document).ready(function () {
 
 	
 			</div>
-				
+		<script src="../images/jquery-1.11.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.fstLevel').hover(
+					function () {
+						$('ul', this).slideToggle(200);
+					}
+					)
+			});
+		</script>
+	<script>
+$(document).ready(function () {
+	$('.footerOuter').css('background','#ced2d6');
+	$('.someLinks').css('display','block');
+	$('.content').css('height','auto');
+});
+</script>
 	</body>
 </html>

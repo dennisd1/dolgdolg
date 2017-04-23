@@ -170,14 +170,16 @@ $(document).ready(function () {
 <script>
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
-		url=$('div[data-loader]').attr("data-loader");
-		id=$('div[data-loader]').attr("id");
+		url=$(this).attr("data-loader");
+		id=$(this).attr("id");
+		        console.log(url);
+			console.log(id);
 			$.get(url, function(data){  
 				$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);
 				
-                    console.log(url);
-			console.log(id);
+                    //console.log(url);
+			//console.log(id);
                  });
 	});
 });

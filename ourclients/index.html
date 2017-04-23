@@ -185,8 +185,9 @@ $(document).ready(function () {
 		$(document).ready(function () {
 		url=$('div[data-loader]').attr("data-loader");
 		id=$('div[data-loader]').attr("id");
-			$.get(url, function(data){           
-                    		$("#"+id).html(data);
+			$.get(url, function(data){  
+				$(data).insertBefore("#"+id);
+                    		//$("#"+id).html(data);
 				
                     console.log(url);
 			console.log(id);

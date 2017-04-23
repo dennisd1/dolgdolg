@@ -170,7 +170,7 @@ $(document).ready(function () {
 <script>
 	var url;
 	var id;
-	var html;
+	
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
@@ -182,9 +182,9 @@ $(document).ready(function () {
 				$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);		
                   		console.log('insert after'+id);
-				console.log(html);
+				//console.log(html);
                  });
-		//console.log(html);
+		console.log(html);
 		
 	});
 });

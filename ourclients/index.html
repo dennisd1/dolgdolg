@@ -183,8 +183,7 @@ $(document).ready(function () {
 		idArray.push(id);
 		console.log(idArray); //comment later
 			result = $.get(url).done(function(data){  
-				htmlArray[i]=data;
-				//htmlArray.push(data);
+				htmlArray.push(data);
 				//$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);		
                   		//console.log('insert after'+id);
@@ -194,6 +193,7 @@ $(document).ready(function () {
 		//console.log(html);
 		
 	});
+	console.log('I am finished');
 });
 </script>		
 	</body>

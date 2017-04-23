@@ -172,18 +172,19 @@ $(document).ready(function () {
 	var id;
 	var html;
 	var i=0;
+	var j=0;
+	var idArray = [];
 	var htmlArray = [];
 	
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
 		id=$(this).attr("id");
-		        console.log(url);
-			console.log(id);
-		
-		console.log('loop'+i);
+		idArray.push(id);
+		console.log(idArray); //comment later
 			result = $.get(url).done(function(data){  
-				htmlArray.push(data);
+				htmlArray[i]=data;
+				//htmlArray.push(data);
 				//$(data).insertAfter("#"+id);
                     		//$("#"+id).html(data);		
                   		//console.log('insert after'+id);

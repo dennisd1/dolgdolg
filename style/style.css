@@ -782,6 +782,7 @@ noindex:-o-prefocus, .someLinksInner ul li {
 	}
 .footerOuter{
 	min-width:1280px;
+	background: grey;
 }
 .footerInner{
 	width:1142px;

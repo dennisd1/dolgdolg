@@ -595,7 +595,7 @@ form p{
 }
 .insideContent{
 	display: inline-block;
-	min-height: 860px;
+	/*min-height: 860px;  deleted*/
 	margin-bottom: 10px;
 }
 .diot{

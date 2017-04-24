@@ -19,7 +19,32 @@
 <div id="4" data-loader="../components/footer.html"></div>
 
 		<script src="../images/jquery-1.11.1.min.js"></script>
-		<script>
+		
+	
+<script>
+	var url;
+	var id;
+	var i=1;
+	var j=1;
+
+	
+$(document).ready(function () {
+	$('div[data-loader]').each(function() {
+		url=$(this).attr("data-loader");
+		//id=$(this).attr("id");	
+    		 $.get(url, function(data){           
+                    		$('#'+j).html(data);
+			 	console.log("content added" +j);
+			 	j++;
+		 
+                 });
+		i++;
+		//console.log(html);
+	});
+});
+
+</script>
+	<script>
 			$(document).ready(function () {
 				$('.fstLevel').hover(
 					function () {
@@ -35,30 +60,5 @@ $(document).ready(function () {
 	$('.content').css('height','auto');
 });
 </script>
-	
-<script>
-	var url;
-	var id;
-	var html;
-	var i=1;
-	var j=1;
-	var idArray = [];
-	var htmlArray = [];
-	
-$(document).ready(function () {
-	$('div[data-loader]').each(function() {
-		url=$(this).attr("data-loader");
-		//id=$(this).attr("id");	
-    		 $.get(url, function(data){           
-                    		$('#'+j).html(data);
-			 	j++;
-		 console.log("content added" +j);
-                 });
-		i++;
-		//console.log(html);
-	});
-});
-
-</script>		
 	</body>
 </html>

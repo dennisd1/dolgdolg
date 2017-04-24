@@ -33,10 +33,10 @@ $(document).ready(function () {
 		url=$(this).attr("data-loader");
 		id=$(this).attr("id");	
     		 $.get(url, function(data){
-			 //$('#'+j).html(data);
-			 $('#'+id).html(data);
-			 console.log("# increased"+id);
-			 //j++;
+			 $('#'+j).html(data);
+			 //$('#'+id).html(data);
+			 console.log("# increased"+j);
+			 j++;
                  });
 	});
 });

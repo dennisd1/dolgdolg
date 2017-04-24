@@ -34,13 +34,9 @@ $(document).ready(function () {
 		//id=$(this).attr("id");	
     		 $.get(url, function(data){
 			 $('#'+j).html(data);
-			 console.log("content added" +j);
-                    	 })
-			 .then(function() {
-  			 console.log("j increased"+j);
-			 j++;
- 
+			 console.log("j increased"+j);
                  });
+		j++;
 
 	});
 });

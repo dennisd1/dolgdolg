@@ -35,9 +35,8 @@ $(document).ready(function () {
     		 $.get(url, function(data){
 			 $('#'+j).html(data);
 			 console.log("j increased"+j);
+			 j++;
                  });
-		j++;
-
 	});
 });
 

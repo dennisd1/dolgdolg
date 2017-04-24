@@ -24,13 +24,22 @@ h1{
 	color: #1b3b62;
 	display:inline-block;
 }
-.herotext{                              /*added */
+.herosubtitle{                              /*added */
 	padding-left: 28px;
 	margin:20px 20px 20px 10px;
 	font-family: "ubuntuB";
 	font-size: 18px;
 	color: black;
 	display:inline-block;
+}
+.herotext{                              /*added */
+	padding-left: 28px;
+	margin:20px 20px 20px 10px;
+	font-family: "ubuntuB";
+	font-size: 14px;
+	color: black;
+	display:inline-block;
+	font-weight: normal;
 }
 h2{
 	font-family: "ubuntuB";

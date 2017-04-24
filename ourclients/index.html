@@ -31,11 +31,12 @@
 $(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
-		//id=$(this).attr("id");	
+		id=$(this).attr("id");	
     		 $.get(url, function(data){
-			 $('#'+j).html(data);
-			 console.log("j increased"+j);
-			 j++;
+			 //$('#'+j).html(data);
+			 $('#'+id).html(data);
+			 console.log("# increased"+id);
+			 //j++;
                  });
 	});
 });

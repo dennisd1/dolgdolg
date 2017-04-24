@@ -859,11 +859,11 @@ input[name="house"]{
 opera:-o-prefocus .insidePage{
 	margin-top:80px;
 }
-.upperPic{
-	width:1280px;
+.upperPic{                     /*changed:*/
+	width:1380px;		/*changed from 1280*/
 	height:221px;
 	position:absolute;
-	top:-222px;
+	top:-348px;      /*top:-222px;*/
 	left:-70px;
 	z-index:1
 }

@@ -32,11 +32,12 @@ $(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
 		//id=$(this).attr("id");	
-    		 $.get(url, function(data){           
-                    	 })
-			 .then(function(data) {
-    			$('#'+j).html(data);
+    		 $.get(url, function(data){
+			 $('#'+j).html(data);
 			 console.log("content added" +j);
+                    	 })
+			 .then(function() {
+  			 console.log("j increased"+j);
 			 j++;
  
                  });

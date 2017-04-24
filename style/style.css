@@ -15,6 +15,15 @@ h1{
 	color: #1b3b62;
 	display:inline-block;
 }
+header1{                              /*added */
+	border-left: 7px solid green;
+	padding-left: 28px;
+	margin:20px 20px 20px 10px;
+	font-family: "ubuntuB";
+	font-size: 36px;
+	color: #1b3b62;
+	display:inline-block;
+}
 h2{
 	font-family: "ubuntuB";
 	font-size: 16px;

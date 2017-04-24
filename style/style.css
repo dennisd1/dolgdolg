@@ -782,7 +782,8 @@ noindex:-o-prefocus, .someLinksInner ul li {
 	}
 .footerOuter{
 	min-width:1280px;
-	background: grey;
+	height: 380px;
+	background: WhiteSmoke;
 }
 .footerInner{
 	width:1142px;

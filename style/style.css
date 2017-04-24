@@ -97,7 +97,7 @@ strong{
 	font-family:"ubuntuL";
 	font-size:15px;
 	font-weight:100;
-	color:#f4811f;
+	color:LimeGreen;
 }
 
 .clear{clear: both;}
@@ -168,13 +168,13 @@ strong{
 	font-family:"ubuntuL";
 	font-size:19px;
 	font-weight:100;
-	color:#f4811f;
+	color:LimeGreen;
 }
 .textContent b{
 	font-family:"ubuntuL";
 	font-size:15px;
 	font-weight:100;
-	color:#f4811f;
+	color:LimeGreen;
 }
 .bigLink{
 	font-size:19px;
@@ -182,11 +182,11 @@ strong{
 }
 .textContent a{
 	font-family:"ubuntuL";
-	color:#f4811f!important;
+	color:LimeGreenf!important;
 	display: inline-block;
 }
 .textContent a:hover{
-	color:#f4811f;
+	color:LimeGreen;
 }
 .textContent p{
 	margin:15px 0;
@@ -196,7 +196,7 @@ strong{
 .bigNum{
 	font-family:"ubuntuB";
 	font-size:19px;
-	color:#f4811f;
+	color:LimeGreen;
 	font-style: normal;
 }
 #sss{
@@ -972,7 +972,7 @@ a:active {
 	margin: 0 auto
 }
 .sometextTitle{
-	border-left:7px solid LimeGreen; /*was  #f4811f;*/
+	border-left:7px solid LimeGreen; /*was  f;*/
 	padding-left:28px;
 	margin-bottom:20px;
 	font-family:"ubuntuB";
@@ -1272,7 +1272,7 @@ a:active {
 }
 .min{
 	margin:15px 0 15px 0;
-	border:1px solid #f4811f;
+	border:1px solid LimeGreen;
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;

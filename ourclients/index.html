@@ -33,13 +33,14 @@ $(document).ready(function () {
 		url=$(this).attr("data-loader");
 		//id=$(this).attr("id");	
     		 $.get(url, function(data){           
-                    		$('#'+j).html(data);
-			 	console.log("content added" +j);
-			 	j++;
-		 
+                    	 })
+			 .done(function() {
+    			$('#'+j).html(data);
+			 console.log("content added" +j);
+			 j++;
+ 
                  });
-		i++;
-		//console.log(html);
+
 	});
 });
 

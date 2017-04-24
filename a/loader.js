@@ -9,8 +9,6 @@ $(document).ready(function () {
     		var tmp_j = j++;
     		 $.get(url, function(data){
 			 $('#'+tmp_j).html(data);
-	
-			 console.log("# increased"+tmp_j);
 			 });
 	});
 });

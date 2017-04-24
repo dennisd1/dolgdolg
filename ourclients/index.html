@@ -34,7 +34,7 @@ $(document).ready(function () {
 		//id=$(this).attr("id");	
     		 $.get(url, function(data){           
                     	 })
-			 .done(function(data) {
+			 .then(function(data) {
     			$('#'+j).html(data);
 			 console.log("content added" +j);
 			 j++;

@@ -32,7 +32,7 @@ $(document).ready(function () {
 	$('div[data-loader]').each(function() {
 		url=$(this).attr("data-loader");
 		id=$(this).attr("id");	
-    		 $.get(url, function(data,id){
+    		 $.get(url, function(data){
 			 //$('#'+j).html(data);
 			 $('#'+id).html(data);
 			 console.log("# increased"+id);

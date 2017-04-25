@@ -39,6 +39,9 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
     border-radius: 3px;
     border-width: 0;
 }
+.greennumber{
+	color: green;
+	}
 h1{
 	border-left: 7px solid LimeGreen; /*#f4811f*/
 	padding-left: 28px;

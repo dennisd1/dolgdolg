@@ -131,6 +131,9 @@ strong{
 	width: 1142px;
 	height: 145px;
 }
+.newsDate {
+    padding-left: 35px;
+}	
 #newsSlider{
 	position: relative;
 	float:left;

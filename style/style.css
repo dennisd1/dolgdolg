@@ -40,6 +40,7 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
     border-width: 0;
 }
 .greennumber{
+	font-size: 25px;
 	color: green;
 	}
 h1{

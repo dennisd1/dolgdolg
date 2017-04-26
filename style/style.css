@@ -925,6 +925,7 @@ input[name="house"]{
 .insidePage{
 	position:relative;
 	overflow:visible;
+	/*added*/ margin-top:30px;
 }
 opera:-o-prefocus .insidePage{
 	margin-top:80px;
@@ -933,7 +934,7 @@ opera:-o-prefocus .insidePage{
 	width:1380px;		/*changed from 1280*/
 	height:221px;
 	position:absolute;
-	top:-348px;      /*top:-222px;*/
+	top:-170px;      /*top:-222px;*/
 	left:-70px;
 	z-index:1
 }

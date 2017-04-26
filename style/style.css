@@ -481,10 +481,11 @@ form p{
 	min-height: 38px;
 	width: 1130px;
 	position: absolute;
-	bottom: 0px;
 	color: #3e4757;
 	font-size: 19px;
 	font-family:"ubuntuL";
+	top: 120px;
+        left: 240px;
 	/*padding-top: 30px;*/
 }
 .navigation a{		/*was .header .navigation{ */

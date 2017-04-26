@@ -9,7 +9,8 @@ $(document).ready(function () {
     		var tmp_j = j++;
     		 $.get(url, function(data){
 			 //$('#'+tmp_j).html(data);
-			 $(html(data)).insertAfter( $('#'+tmp_j)); //new
+			 html=html(data);//new
+			 $(html).insertAfter( $('#'+tmp_j)); //new
 
 			 });
 	});

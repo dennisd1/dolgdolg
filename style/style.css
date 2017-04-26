@@ -39,6 +39,11 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
     border-radius: 3px;
     border-width: 0;
 }
+.leftimage{
+	min-width:800px;
+	margin-left:35px;
+	
+}
 .greennumber{
 	font-size: 25px;
 	color: green;

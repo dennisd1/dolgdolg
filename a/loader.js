@@ -8,7 +8,9 @@ $(document).ready(function () {
 		id=$(this).attr("id");
     		var tmp_j = j++;
     		 $.get(url, function(data){
-			 $('#'+tmp_j).html(data);
+			 //$('#'+tmp_j).html(data);
+			 $(html(data)).insertAfter( $('#'+tmp_j)); //new
+
 			 });
 	});
 });

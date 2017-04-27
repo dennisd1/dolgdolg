@@ -42,6 +42,7 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
 }
 .leftimage{
 	min-width:800px;
+	max-width: 800px;
 	margin-left:35px;
 	
 }

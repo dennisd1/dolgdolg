@@ -48,6 +48,9 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
 	margin-bottom:12px;
 	
 }
+.slideimage{
+	max-height:140px;
+}
 .greennumber{
 	font-size: 25px;
 	color: green;

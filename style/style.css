@@ -51,6 +51,9 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
 .slideimage{
 	max-height:140px;
 }
+.slideimage151 {
+    height: 151px;
+}
 .greennumber{
 	font-size: 25px;
 	color: green;

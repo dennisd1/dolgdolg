@@ -498,13 +498,13 @@ form p{
 
 .navigation{ 		/*was .header .navigation{ */
 	min-height: 38px;
-	width: 1130px;
+	width: 100%;
 	position: absolute;
 	color: #3e4757;
-	font-size: 19px;
+	font-size: 18px;
 	font-family:"ubuntuL";
 	top: 85px;
-        left: 240px;
+        left: 230px;
 	/*padding-top: 30px;*/
 }
 .navigation a{		/*was .header .navigation{ */

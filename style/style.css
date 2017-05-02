@@ -508,13 +508,14 @@ form p{
 	font-family:"ubuntuL";
 	top: 85px;
         left: 230px;
+	display: flex; /*added*/
 	/*padding-top: 30px;*/
 }
 .navigation a{		/*was .header .navigation{ */
 	color: #3e4757;
 	padding:0 35px 0 10px;
 	text-decoration: none;
-	display: block;
+	display: flex; /*block*/
 	height: 48px;
 	border-left:7px solid transparent;
 }

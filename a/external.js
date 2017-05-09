@@ -8,9 +8,7 @@
                     $('#divtoappend').html(data);
                     //console.log("2. content form raw added");
                  });
-          } 
-   }
-  
+      }   
   //______________________________________________________
     if (geturl==="t-list") {
         console.log("EXTERNAL T_LIST FOUND!!!");

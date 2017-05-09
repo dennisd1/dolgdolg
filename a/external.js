@@ -7,9 +7,9 @@
     console.log("SESSION FOUND!!!");
 
      //$("#post_1.main-avatar").find("img.avatar").css("width"," 100px");
-$(document).ready(function(){
-$("#post_1").find("img.avatar").css("height"," 100px");
-       });
+
+$("#post_1").find("img.avatar").css("height"," 100px"); //just to see effect
+       
 $( "p:contains('?')").each(function( index ) {
   $(this).html("<h1>"+$(this).text()+"</h1>");
 $(this).parents(".topic-body").prev(".topic-avatar").css( "display", "none" );

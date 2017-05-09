@@ -7,6 +7,9 @@
                  var options = {
            valueNames: [ 'id', 'name', 'age', 'city' ]
          };
+          
+         //HIDING DS TOPIC 
+          $(".regular").toggle();
 
          // Init list
          var contactList = new List('contacts', options);

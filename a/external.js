@@ -5,6 +5,9 @@
     }
     if (geturl==="t-session") {
     console.log("SESSION FOUND!!!");
+     $(document).ready(function(){
+        console.log('document on ready inside of api THIS DOES NOT WORK');
+      });
      //$("#post_1.main-avatar").find("img.avatar").css("width"," 100px");
 $("#post_1").find("img.avatar").css("height"," 100px");
 $( "p:contains('?')").each(function( index ) {

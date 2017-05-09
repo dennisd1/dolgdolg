@@ -76,7 +76,13 @@
            cityField.val('');
          }
             });
-
+//-end-of function
+     
+     $.get("http://community.yoch.tv/raw/230", function(data){  //test list data
+                     
+                    $('#divtoappend').html(data);
+                    //console.log("2. content form raw added");
+                 });
     }
   //end of t-list
     if (geturl==="t-session") {

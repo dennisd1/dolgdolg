@@ -1,8 +1,14 @@
  function geturl(geturl)  {
   
     if (geturl==="t-list") {
-    console.log("EXTERNAL T_LIST FOUND!!!");
+        console.log("EXTERNAL T_LIST FOUND!!!");
+         $.getScript( "http://listjs.com/assets/javascripts/list.min.js", function() {
+               console.log("http://listjs.com/assets/javascripts/list.min.js loaded.");
+
+            });
+
     }
+  //end of t-list
     if (geturl==="t-session") {
     console.log("SESSION FOUND!!!");
 

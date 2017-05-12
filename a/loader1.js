@@ -21,8 +21,9 @@ function clickfunction(){
 
 	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 
 	$( ".b-panel-menu-item--logo" ).html( '<img src="../a/logo.jpg" href="/" width="34px">' );
-		$('.b-cell-possibly_disabled').each(function() {
-		$(this).append('<div data-key="Multistat" class="b-card-year b-card-year--active g-unselectable js-card--founder_type">Подробнее</div>');
+		$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
+		$(this).append('<a data-key="Multistat" class="b-card-year b-card-year--active g-unselectable js-card--founder_type"
+		href="http://yandex.ru">Подробнее</a>');
 		});
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
 	//$(".b-submenu-item").click(function() {

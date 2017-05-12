@@ -16,7 +16,7 @@ $(document).ready(function () {
 	});
 });
 //this is new---- to delele
-$('div:contains('Информация')').click(function() {
+$("#button1").click(function() {
    $("#2").toggle();
   $("#3").toggle();
 });

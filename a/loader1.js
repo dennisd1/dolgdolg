@@ -23,8 +23,8 @@ function clickfunction(){
 	  $("#3").toggle();
 	});
 
-	//$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
-	$(".b-submenu-item").click(function() {
+	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
+	//$(".b-submenu-item").click(function() {
 	   console.log("Арбитражные дела CLICKED");
 	   $("#1").toggle();
 	   $("#3").toggle();

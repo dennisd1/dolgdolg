@@ -21,6 +21,7 @@ $("#button1").click(function() {
   $("#3").toggle();
 });
 $('b-submenu-item:contains("Арбитражные дела")').click(function() {
+   console.log("Арбитражные дела CLICKED");
    $("#1").toggle();
    $("#3").toggle();
 });

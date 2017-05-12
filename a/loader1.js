@@ -24,6 +24,13 @@ function clickfunction(){
 		$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 		$(this).after('<a data-key="Multistat" class="details b-card-year b-card-year--active g-unselectable js-card--founder_type" href="http://yandex.ru">Подробнее</a>');
 		});
+	
+	$('div:contains("руб.")').each(function() {
+		this.textContent = this.textContent.replace(/ /g, '');
+		$(this).css("color","red");
+		});
+
+	
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
 	//$(".b-submenu-item").click(function() {
 	   console.log("Арбитражные дела CLICKED");

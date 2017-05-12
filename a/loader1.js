@@ -16,10 +16,10 @@ $(document).ready(function () {
 	});
 });
 //this is new---- to delele
-$(".button1").сlick(function() {
+$("#button1").сlick(function() {
   $("#1").toggle();
 });
-$(".button2").сlick(function() {
+$("#button1").сlick(function() {
   $("#2").toggle();
 });
 //------------------------------

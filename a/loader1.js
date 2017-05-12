@@ -17,17 +17,22 @@ $(document).ready(function () {
 });
 //this is new---- to delele
 function clickfunction(){
-	  console.log("clickfunctionrun");
-	$("#button1").click(function() {
-	  $("#2").toggle();
-	  $("#3").toggle();
-	});
+
 
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
 	//$(".b-submenu-item").click(function() {
 	   console.log("Арбитражные дела CLICKED");
-	   $("#1").toggle();
-	   $("#3").toggle();
+	   $("#1").hide();
+	   $("#2").show();
+	   $("#3").hide();
+	});
+	
+	$('.b-submenu-item:contains("Информация")').click(function() {
+	//$(".b-submenu-item").click(function() {
+	   console.log("Информация CLICKED");
+	   $("#1").show();
+	   $("#2").hide();
+	   $("#3").hide();
 	});
 }
 //------------------------------

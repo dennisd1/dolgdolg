@@ -16,6 +16,8 @@ $(document).ready(function () {
 	});
 });
 //this is new---- to delele
+
+  console.log("I am loaded");
 $("#button1").click(function() {
   $("#2").toggle();
   $("#3").toggle();

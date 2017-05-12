@@ -25,7 +25,7 @@ function clickfunction(){
 		$(this).after('<a data-key="Multistat" class="details b-card-year b-card-year--active g-unselectable js-card--founder_type" href="http://yandex.ru">Подробнее</a>');
 		});
 	
-	$('div:contains("руб.")').each(function() {
+	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 		this.textContent = this.textContent.replace(/ /g, '');
 		//$(this).css("color","red");
 		});

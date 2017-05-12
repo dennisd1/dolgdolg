@@ -27,7 +27,7 @@ function clickfunction(){
 	
 	$('div:contains("руб.")').each(function() {
 		this.textContent = this.textContent.replace(/ /g, '');
-		$(this).css("color","red");
+		//$(this).css("color","red");
 		});
 
 	

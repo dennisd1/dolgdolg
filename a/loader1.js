@@ -20,7 +20,7 @@ $(document).ready(function () {
 //   $("#2").toggle();
 //   $("#3").toggle();
 //});
-$("div:contains('Арбитражные дела')").сlick(function() {
+$('div:contains("Арбитражные дела")').сlick(function() {
    $("#1").toggle();
    $("#3").toggle();
 });

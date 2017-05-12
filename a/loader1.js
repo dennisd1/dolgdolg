@@ -54,6 +54,16 @@ function clickfunction(){
 	   $("#3").hide();
 	   $("#4").show();
 	});
+	
+	$('.g-print-hidden').click(function() {         //печать
+
+	   console.log("ПЕЧАТЬ CLICKED");
+	   $("#1").show();
+	   $("#2").show();
+	   $("#3").show();
+	   $("#4").show();
+	});
+		
 }
 //------------------------------
 //

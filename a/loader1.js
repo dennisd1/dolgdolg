@@ -16,18 +16,19 @@ $(document).ready(function () {
 	});
 });
 //this is new---- to delele
+clickfunction(){
+	  console.log("clickfunctionrun");
+	$("#button1").click(function() {
+	  $("#2").toggle();
+	  $("#3").toggle();
+	});
 
-  console.log("I am loaded");
-$("#button1").click(function() {
-  $("#2").toggle();
-  $("#3").toggle();
-});
-
-//$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
-$(".b-submenu-item").click(function() {
-   console.log("Арбитражные дела CLICKED");
-   $("#1").toggle();
-   $("#3").toggle();
-});
+	//$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
+	$(".b-submenu-item").click(function() {
+	   console.log("Арбитражные дела CLICKED");
+	   $("#1").toggle();
+	   $("#3").toggle();
+	});
+}
 //------------------------------
 //

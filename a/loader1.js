@@ -16,7 +16,7 @@ $(document).ready(function () {
 	});
 });
 //this is new---- to delele
-clickfunction(){
+function clickfunction(){
 	  console.log("clickfunctionrun");
 	$("#button1").click(function() {
 	  $("#2").toggle();

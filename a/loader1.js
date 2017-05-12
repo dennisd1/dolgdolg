@@ -21,7 +21,9 @@ function clickfunction(){
 
 	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 
 	$( ".b-panel-menu-item--logo" ).html( '<img src="../a/logo.jpg" href="/" width="34px">' );
-	
+		$('.b-cell-possibly_disabled').each(function() {
+		$(this).append('<div data-key="Multistat" class="b-card-year b-card-year--active g-unselectable js-card--founder_type">Подробнее</div>');
+		});
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
 	//$(".b-submenu-item").click(function() {
 	   console.log("Арбитражные дела CLICKED");

@@ -15,10 +15,12 @@ $(document).ready(function () {
 			 });
 	});
 });
-//this is new---- to delele
+//DECORATIONS GOES HERE
+
 function clickfunction(){
 
-	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства");
+	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 
+	$( ".b-panel-menu-item--logo" ).html( '<img src="../a/logo.jpg" href="/" width="34px">' );
 	
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
 	//$(".b-submenu-item").click(function() {

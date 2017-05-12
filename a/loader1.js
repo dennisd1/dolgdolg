@@ -16,10 +16,10 @@ $(document).ready(function () {
 	});
 });
 //this is new---- to delele
-$("div:contains('Информация')").сlick(function() {
-   $("#2").toggle();
-   $("#3").toggle();
-});
+//$("div:contains('Информация')").сlick(function() {
+//   $("#2").toggle();
+//   $("#3").toggle();
+//});
 $("div:contains('Арбитражные дела')").сlick(function() {
    $("#1").toggle();
    $("#3").toggle();

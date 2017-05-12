@@ -43,6 +43,15 @@ function clickfunction(){
 	   $("#2").hide();
 	   $("#3").show();
 	});
+	
+	$('.b-submenu-subitem-title:contains("Бухгалтерская отчетность")').click(function() {
+
+	   console.log("БУХГАЛТЕРСКАЯ CLICKED");
+	   $("#1").hide();
+	   $("#2").hide();
+	   $("#3").hide();
+	   $("#4").show();
+	});
 }
 //------------------------------
 //

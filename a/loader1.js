@@ -35,7 +35,7 @@ function clickfunction(){
 				
 				$(this).closest(".b-table-row").find('a[href*="#side/info"]');     //!!!! DOESNT WORK
 				
-			        console.log("RAW = ", $(this).closest(".b-table-row").find('a[href*="case/instances"]').filter(':first').html());
+			        console.log("RAW = ", $(this).closest(".b-table-row").find('a[href*="side/info"]').filter(':first').html());
 			}
 
 		});

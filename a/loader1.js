@@ -27,7 +27,7 @@ function clickfunction(){
 		});
 	
 	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
-		this.textContent = this.textContent.replace(/ /g, '');
+		//this.textContent = this.textContent.replace(/ /g, '');  //remove spaces
 		sum = this.textContent.replace(" руб.", '');
 		console.log("сумма = ", sum);
 		//$(this).css("color","red");

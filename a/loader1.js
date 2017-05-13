@@ -21,12 +21,15 @@ function clickfunction(){
 
 	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 
 	$( ".b-panel-menu-item--logo" ).html( '<img src="../a/logo.jpg" href="/" width="34px">' );
+	
 		$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 		$(this).after('<a data-key="Multistat" class="details b-card-year b-card-year--active g-unselectable js-card--founder_type" href="http://yandex.ru">Подробнее</a>');
 		});
 	
 	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 		this.textContent = this.textContent.replace(/ /g, '');
+		sum = this.textContent.replace(" руб.", '');
+		console.log("сумма = ", sum);
 		//$(this).css("color","red");
 		});
 

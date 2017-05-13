@@ -35,7 +35,7 @@ function clickfunction(){
 				
 				$(this).closest(".b-table-row").find('a[href*="#side/info"]');     //!!!! CONTIN - find child a.href
 				
-			        console.log("RAW = ", $(this).closest(".b-table-row").find('a[href*="#side/info"]).html()');
+			        console.log("RAW = ", $(this).closest(".b-table-row").find('a[href*="#side/info"]').html());
 			}
 
 		});

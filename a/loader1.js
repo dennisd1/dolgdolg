@@ -30,8 +30,8 @@ function clickfunction(){
 		//this.textContent = this.textContent.replace(/ /g, '');  //remove spaces
 		sumwithoutspaces = this.textContent.replace(/ /g, '');
 		sum = sumwithoutspaces.replace("руб.", '');
-			if(sum <= "1000000"){
-			console.log("сумма меньше миллиона= ", sum);
+			if(sum <= "1000000" && sum >="200000"){
+			console.log("сумма меньше миллиона и большое 200 000 = ", sum);
 			}
 		//$(this).css("color","red");
 		});

@@ -35,7 +35,7 @@ function clickfunction(){
 				
 				$(this).closest(".b-table-row").find('a[href*="#side/info"]');     //!!!! DOESNT WORK
 				
-			        console.log("RAW = ", $(this).closest(".b-table-row").find('a'));
+			        console.log("RAW = ", $(this).closest(".b-table-row").find('a').eq(2).html());
 				 //console.log("RAW = ", $(this).closest(".b-table-row").find('a').filter(':last').html());
 			}
 

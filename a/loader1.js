@@ -35,7 +35,7 @@ function clickfunction(){
 				
 				$(this).closest(".b-table-row").find('a[href*="#side/info"]');     //!!!! DOESNT WORK
 				
-			        console.log("RAW = ", $(this).closest(".b-table-row").find('a:nth-child(3)').filter(':last').html());
+			        console.log("RAW = ", $(this).closest(".b-table-row").find('a:contains("Тепло-")').filter(':last').html());
 			}
 
 		});

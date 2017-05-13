@@ -28,8 +28,11 @@ function clickfunction(){
 	
 	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 		//this.textContent = this.textContent.replace(/ /g, '');  //remove spaces
-		sum = this.textContent.replace(" руб.", '');
-		console.log("сумма = ", sum);
+		sumwithoutspaces = this.textContent.replace(/ /g, '');
+		sum = sumwithoutspaces.replace("руб.", '');
+			if(sum <= "1000000"){
+			console.log("сумма меньше миллиона= ", sum);
+			}
 		//$(this).css("color","red");
 		});
 

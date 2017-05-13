@@ -33,9 +33,9 @@ function clickfunction(){
 			if(parseInt(sum) <= 1000000 && parseInt(sum) >=200000){
 			 	$(this).css("color","red");
 				
-				$(this).closest(".b-table-row").css("background-color","yellow");     //!!!! CONTIN - find child a.href
+				$(this).closest(".b-table-row").find('a[href*="#side/info"]:first');     //!!!! CONTIN - find child a.href
 				
-			        //console.log("RAW = ", $(this).closest(".b-table-row"));
+			        console.log("RAW = ", $(this).closest(".b-table-row").find('a[href*="#side/info"]:first')));
 			}
 
 		});

@@ -32,6 +32,8 @@ function clickfunction(){
 		sum = sumwithoutspaces.replace("руб.", '');   //remove ruble
 			if(parseInt(sum) <= 1000000 && parseInt(sum) >=200000){
 			 	$(this).css("color","red");
+				
+				$(this).closest(".b-table-row").css("background-color","yellow");
 			//console.log("сумма меньше миллиона и большое 200 000 = ", sum);
 			}
 		//$(this).css("color","red");

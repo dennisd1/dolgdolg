@@ -34,7 +34,8 @@ function clickfunction(){
 			 	$(this).css("color","red");
 				
 				$(this).closest(".b-table-row").css("background-color","yellow");
-			//console.log("сумма меньше миллиона и большое 200 000 = ", sum);
+				
+			        console.log("RAW = ", $(this).closest(".b-table-row"));
 			}
 		//$(this).css("color","red");
 		});

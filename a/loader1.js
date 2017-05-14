@@ -40,6 +40,21 @@ function clickfunction(){
 			}
 
 		});
+	
+	
+	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {       //hiding rows
+
+		sumwithoutspaces = this.textContent.replace(/ /g, ''); //remove spaces
+		sum = sumwithoutspaces.replace("руб.", '');   //remove ruble
+			if(parseInt(sum) >= 1000000 && parseInt(sum) <=200000){
+			 					
+				$(this).closest(".b-table-row").toggle();     //!!!! DOESNT WORK
+				
+			        //console.log("RAW = ", $(this).closest(".b-table-row").find('a').eq(2).html());
+				 //console.log("RAW = ", $(this).closest(".b-table-row").find('a').filter(':last').html());
+			}
+
+		});
 
 	
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {

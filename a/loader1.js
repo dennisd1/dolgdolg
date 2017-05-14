@@ -46,7 +46,7 @@ function clickfunction(){
 
 		sumwithoutspaces = this.textContent.replace(/ /g, ''); //remove spaces
 		sum = sumwithoutspaces.replace("руб.", '');   //remove ruble
-			if(parseInt(sum) >= 1000000 && parseInt(sum) <=200000){
+			if(parseInt(sum) >= 1000000 || parseInt(sum) <=200000){
 			 					
 				$(this).closest(".b-table-row").toggle();     //!!!! DOESNT WORK
 				

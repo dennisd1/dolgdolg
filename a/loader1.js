@@ -28,7 +28,7 @@ function clickfunction(){
 	
 	//analisys by sum--------------------------
 	
-$('div:contains("Анализ")').click(function() {
+$('.b-submenu-subitem-title:contains("Анализ")').click(function() {
 	
 	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 

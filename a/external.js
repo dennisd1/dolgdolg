@@ -1,14 +1,7 @@
  function geturl(geturl)  {
   //just test url class below
   
-   if (geturl==="t-chatroom") {
-    console.log("CHATROOM FOUND!!!");
-         $.get("http://community.yoch.tv/raw/231", function(data){  //test list data
-                     
-                    $('#divtoappend').html(data);
-                    //console.log("2. content form raw added");
-                 });
-      }   
+
   //______________________________________________________
     if (geturl==="t-list") {
         console.log("EXTERNAL T_LIST FOUND!!!");
@@ -18,8 +11,8 @@
            valueNames: [ 'id', 'name', 'age', 'city' ]
          };
           
-         //HIDING DS TOPIC 
-          $(".regular").toggle();
+         //HIDING DS TOPIC  - switchedof
+         // $(".regular").toggle();
 
          // Init list
          var contactList = new List('contacts', options);

@@ -26,6 +26,10 @@ function clickfunction(){
 		$(this).after('<a data-key="Multistat" class="details b-card-year b-card-year--active g-unselectable js-card--founder_type" href="http://yandex.ru">Подробнее</a>');
 		});
 	
+	//analisys by sum--------------------------
+	
+$('div:contains("Анализ")').click(function() {
+	
 	$('.b-cell-possibly_disabled:contains("руб.")').each(function() {
 
 		sumwithoutspaces = this.textContent.replace(/ /g, ''); //remove spaces
@@ -55,7 +59,8 @@ function clickfunction(){
 			}
 
 		});
-
+});
+//end of analisys-----------------------------------------------------------------------------------------
 	
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {
 	//$(".b-submenu-item").click(function() {

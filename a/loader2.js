@@ -28,7 +28,9 @@ function clickfunction(){
 //if (companystatus === "debtor"){      //check status, 
 //}
 debtorname = $('.b-card-header-number').text();
+director = $('a[href*="#side/person"]').text();
 console.log(debtorname);
+console.log(director);
 	
 
 	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 

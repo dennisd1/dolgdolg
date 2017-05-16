@@ -29,8 +29,7 @@ function clickfunction(){
 //}
 debtorname = $('.b-card-header-number').text();
 director = $('a[href*="#side/person"]').text();
-console.log(debtorname);
-console.log(director);
+//add addresses, email, phone
 	
 
 	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 
@@ -53,7 +52,7 @@ $('.b-submenu-subitem-title:contains("Анализ")').click(function() {
 				
 				$(this).closest(".b-table-row").find('a[href*="#side/info"]');     //!!!! DOESNT WORK
 				
-			        console.log("RAW = ", $(this).closest(".b-table-row").find('a').eq(2).html());
+			        console.log("кредитор = ", $(this).closest(".b-table-row").find('a[href*="#side/info"]'));
 				 //console.log("RAW = ", $(this).closest(".b-table-row").find('a').filter(':last').html());
 			}
 

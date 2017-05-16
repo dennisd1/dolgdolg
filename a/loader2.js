@@ -28,6 +28,13 @@ console.log(debtorname);
 //DECORATIONS GOES HERE
 
 function clickfunction(){
+	
+//timeout needed - set up as external one	
+//if (companystatus === "debtor"){      //check status, 
+//}
+debtorname = $('.b-card-header-number').text();
+console.log(debtorname);
+	
 
 	$('.b-submenu-item:contains("Реестры")').html("Исполнительные производства"); 
 	$( ".b-panel-menu-item--logo" ).html( '<img src="../a/logo.jpg" href="/" width="34px">' );

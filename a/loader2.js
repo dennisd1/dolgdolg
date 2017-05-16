@@ -20,8 +20,8 @@ $(document).ready(function () {
 
 var debtorname, creditorname, debtorstatus, creditoraddress, creditordirector, creditorogrn; 
 
-if (companystatus === "debtor"){ 
-}
+//if (companystatus === "debtor"){      //check status, 
+//}
 debtorname = $('.b-card-header-number').val();
 console.log(debtorname);
 

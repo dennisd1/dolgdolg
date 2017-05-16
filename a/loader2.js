@@ -52,7 +52,7 @@ $('.b-submenu-subitem-title:contains("Анализ")').click(function() {
 				
 				$(this).closest(".b-table-row").find('a[href*="#side/info"]');     //!!!! DOESNT WORK
 				
-			        console.log("кредитор = ", $(this).closest(".b-table-row").find('a[href*="#side/info"]').text());
+			        console.log("кредитор = ", $(this).closest(".b-table-row").find('a[href*="#side/info"]').text(),"href=", $(this).closest(".b-table-row").find('a[href*="#side/info"]').attr('href') );
 				 //console.log("RAW = ", $(this).closest(".b-table-row").find('a').filter(':last').html());
 			}
 

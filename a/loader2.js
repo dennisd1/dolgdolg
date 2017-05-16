@@ -22,7 +22,7 @@ var debtorname, creditorname, debtorstatus, creditoraddress, creditordirector, c
 
 //if (companystatus === "debtor"){      //check status, 
 //}
-debtorname = $('.b-card-header-number').val();
+debtorname = $('.b-card-header-number').text();
 console.log(debtorname);
 
 //DECORATIONS GOES HERE

@@ -20,11 +20,6 @@ $(document).ready(function () {
 
 var debtorname, creditorname, debtorstatus, creditoraddress, creditordirector, creditorogrn; 
 
-//if (companystatus === "debtor"){      //check status, 
-//}
-debtorname = $('.b-card-header-number').html();
-console.log(debtorname);
-
 //DECORATIONS GOES HERE
 
 function clickfunction(){

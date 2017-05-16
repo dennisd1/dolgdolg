@@ -73,6 +73,9 @@ $('.b-submenu-subitem-title:contains("Анализ")').click(function() {
 
 		});
 });
+	
+//run with delay	
+setTimeout(clickfunction, 2000);  
 //end of analisys-----------------------------------------------------------------------------------------
 	
 	$('.b-submenu-item:contains("Арбитражные дела")').click(function() {

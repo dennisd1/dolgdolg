@@ -30,7 +30,7 @@
         <td class="city">Москва</td>
         <td class="ogrn">1127746371422</td>
         <td class="status">
-                               <div class="ui selection dropdown" style="border: none !important;" tabindex="0">
+                               <div class="ui selection dropdown one" style="border: none !important;" tabindex="0">
                                      <input type="hidden" name="status" value="0">
                                      <div class="text">Статус</div>
                                      <div class="menu transition hidden" tabindex="-1">
@@ -80,6 +80,7 @@
 <script>
  $(document).ready(function() {
     $('.ui.dropdown').dropdown();
+   $('.ui.dropdown.one').dropdown();
 });
 
 //--scource http://listjs.com/examples/add-get-remove/

@@ -1,3 +1,13 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.7/semantic.min.css">
+
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/components/transition.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/components/checkbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/components/dropdown.min.js"></script>
+
+
+
 <div class="h1">Это работающая проверка на наличие данных - не удалять</div>
 
 <div id="contacts">
@@ -93,8 +103,8 @@
       <input type="hidden" id="id-field" value="6368">
       <input type="text" id="name-field" placeholder="Name">
     </td>
-    <td class="age">
-      <input type="text" id="age-field" placeholder="Age">
+    <td class="ogrn">
+      <input type="text" id="ogrn-field" placeholder="ОГРН">
     </td>
     <td class="city">
       <input type="text" id="city-field" placeholder="City">
@@ -115,7 +125,7 @@
 
 $.getScript( "//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js", function( data, textStatus, jqxhr ) {
 var options = {
-  valueNames: [ 'id', 'name', 'age', 'city' ]
+  valueNames: [ 'id', 'name', 'ogrn', 'city' ]
 };
 
 
@@ -123,7 +133,7 @@ var contactList = new List('contacts', options);
 
 var idField = $('#id-field'),
     nameField = $('#name-field'),
-    ageField = $('#age-field'),
+    ogrnField = $('#ogrn-field'),
     cityField = $('#city-field'),
     addBtn = $('#add-btn'),
     editBtn = $('#edit-btn').hide(),
@@ -137,11 +147,11 @@ addBtn.click(function() {
   //this is !!!!! new-----
 
 //append appendble elements--------------------
-inputage = ageField.val();  //val()? 
-console.log("input:" + ageField.val() + "selector "+$(".age:contains('" + inputage + "')").html());
+inputogrn = ogrnField.val();  //val()? 
+console.log("input:" + ogrnField.val() + "selector "+$(".ogrn:contains('" + inputogrn + "')").html());
 
- if ( $('#age-field:contains(inputage)').length ) {
- //console.log("we have such number" + $('#age-field:contains(inputage)').html());
+ if ( $('#ogrn-field:contains(inputogrn)').length ) {
+ //console.log("we have such number" + $('#ogrn-field:contains(inputogrn)').html());
 } 
 else {
     console.log("we dont have number");
@@ -151,7 +161,7 @@ else {
   contactList.add({
     id: Math.floor(Math.random()*110000),
     name: nameField.val(),
-    age: ageField.val(),
+    ogrn: ogrnField.val(),
     city: cityField.val()
   });
   clearFields();
@@ -163,7 +173,7 @@ editBtn.click(function() {
   item.values({
     id:idField.val(),
     name: nameField.val(),
-    age: ageField.val(),
+    ogrn: ogrnField.val(),
     city: cityField.val()
   });
   clearFields();
@@ -186,7 +196,7 @@ function refreshCallbacks() {
     var itemValues = contactList.get('id', itemId)[0].values();
     idField.val(itemValues.id);
     nameField.val(itemValues.name);
-    ageField.val(itemValues.age);
+    ogrnField.val(itemValues.ogrn);
     cityField.val(itemValues.city);
     
     editBtn.show();
@@ -196,7 +206,7 @@ function refreshCallbacks() {
 
 function clearFields() {
   nameField.val('');
-  ageField.val('');
+  ogrnField.val('');
   cityField.val('');
 }
 

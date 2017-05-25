@@ -1,31 +1,31 @@
-<div class="h1">Это работающая проверка на начие данных - не удалять</div>
+<div class="h1">Это работающая проверка на наличие данных - не удалять</div>
 
 <div id="contacts">
   <table>
     <thead>
       <tr>
-        <th class="sort" data-sort="name">Name</th>
-        <th class="sort" data-sort="age">Age</th>
-        <th class="sort" data-sort="city">City</th>
+        <th class="sort" data-sort="name">Название</th>
+        <th class="sort" data-sort="ogrn">ОГРН</th>
+        <th class="sort" data-sort="city">Город</th>
         <th colspan="3">
-          <input type="text" class="search" placeholder="Search contact">
+          <input type="text" class="search" placeholder="Поиск компаний">
         </th>
       </tr>
     </thead>
     <tbody class="list"><tr>
         <td class="id" style="display:none;">79774</td>
-        <td class="name" contenteditable="true">Василек</td>
-        <td class="age">234
-            <div>MY DIV</div>
-         </td>
-        <td class="city"></td>
+        <td class="name" contenteditable="true">
+          <a class="companylink">ОАО "ИПР "ИНФОРМЭЛЕКТРО"</a>
+        </td>
+        <td class="city">Москва</td>
+        <td class="ogrn">1127746371422</td>
         <td class="status">
                            <div class="ui selection dropdown" style="border: none !important;" tabindex="0">
                                      <input type="hidden" name="status" value="1">
                                      <!--<i class="dropdown icon"></i>-->
-                                     <div class="text">Требует анализа</div>
+                                     <div class="text">Требует обработки</div>
                                      <div class="menu transition hidden" tabindex="-1">
-                                       <div class="item active selected" data-value="1">Требует анализа</div>
+                                       <div class="item active selected" data-value="1">Требует обработки</div>
                                        <div class="item" data-value="0">Проанализировано</div>
                                      </div>
                                    </div>

@@ -1,4 +1,4 @@
-var Crawler = require("crawler"); 
+var Crawler = require("crawler");
 var fs = require('fs'); //!!! added
 
 
@@ -32,7 +32,7 @@ c.queue([{
 	
 	//finding dates
 		var $ = res.$;
-         	$("td:contains(29.05.2017)").each(function (){
+         	$(".bank td:nth-child(3)").each(function (){
 		  		console.log("date=", $(this).text());
 				hrefdebtor = $(this).nextAll().eq(1).children("a").attr('href');
 				//console.log(hrefdebtor);

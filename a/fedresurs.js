@@ -18,6 +18,15 @@ var c = new Crawler({
     }
 });
 
+//get monitor
+
+var monitor;
+fs.readFile('monitor.txt', function (err, data) {
+  if (err) throw err;
+  monitor = data;
+  console.log(monitor);
+});
+
 
 // Queue URLs with custom callbacks & parameters
 c.queue([{
@@ -29,14 +38,12 @@ c.queue([{
         if(error){
             console.log(error);
         }else{
-	
-	//finding dates
 		var $ = res.$;
          	$(".bank td:nth-child(3)").each(function (){
 		  		console.log("date=", $(this).text());
-				hrefdebtor = $(this).nextAll().eq(1).children("a").attr('href');
+				hrefdebtor = $(this).nextAll().eq(1).children("a").attr('href');  //reads secon column
 				//console.log(hrefdebtor);
-				var string = ""+hrefdebtor;
+				var string = ""+hrefdebtor;  //to convert to date - STRANGE but working
 				
                                 if( string.indexOf("PrivatePersonCard") !== -1) {
 					console.log("THIS IS PRIVATE PERSON");

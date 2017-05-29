@@ -35,13 +35,17 @@ c.queue([{
          	$("td:contains(29.05.2017)").each(function (){
 		  		console.log("date=", $(this).text());
 				hrefdebtor = $(this).nextAll().eq(1).children("a").attr('href');
-				console.log(hrefline);
+				//console.log(hrefdebtor);
 				var string = ""+hrefdebtor;
-				//var regex = /.{32}$/g;
-				//var substr = hrefdebtor.match(regex);
-                                if(
+				
+                                if( string.indexOf("PrivatePersonCard") !== -1) {
+					console.log("THIS IS PRIVATE PERSON");
+				}
+				else
+				{
 				var last32 = string.slice(-32);
-				console.log("ID=",last32);
+				console.log("COMPANYID=",last32);
+				}
   		});
 
             //console.log('Grabbed', res.body.length, 'bytes');

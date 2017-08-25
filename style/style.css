@@ -59,7 +59,7 @@ a{ outline:none;color:#0B1E43;text-decoration:underline; }
 	color: green;
 	}
 h1{
-	border-left: 7px solid LimeGreen; /*#f4811f*/
+	border-left: 7px goldenrod;  /*golden*/
 	padding-left: 28px;
 	margin:20px 20px 20px 0;
 	font-family: "ubuntuB";
@@ -68,7 +68,7 @@ h1{
 	display:inline-block;
 }
 .header1{                              /*added */
-	border-left: 7px LimeGreen;
+	border-left: 7px goldenrod;  /*golden*/
 	padding-left: 28px;
 	margin:20px 20px 20px 10px;
 	font-family: "ubuntuB";
@@ -156,7 +156,7 @@ strong{
 	font-family:"ubuntuL";
 	font-size:15px;
 	font-weight:100;
-	color:LimeGreen;
+	color: LimeGreen;
 }
 
 .clear{clear: both;}

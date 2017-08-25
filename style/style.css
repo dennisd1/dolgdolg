@@ -440,7 +440,7 @@ form p{
 	color:#3e4757;
 }
 .someText a:hover{
-	color:LimeGreen;
+	color:goldenrod;  /*golden*/
 }
 .general{
 	width: 1142px;
@@ -1037,7 +1037,7 @@ a:active {
 	margin: 0 auto
 }
 .sometextTitle{
-	border-left:7px solid LimeGreen; /*was  f;*/
+	border-left:7px solid goldenrod;  /*golden*/
 	padding-left:28px;
 	margin-bottom:20px;
 	font-family:"ubuntuB";
